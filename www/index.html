@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<title>Калкулатор</title>
+<SCRIPT language=JavaScript>
+<!-- Begin
+function sbor(form) {
+	n=eval(form.n.value);
+	m=eval(form.m.value);
+	form.x1.value =n+"+"+m+"="+(n+m);
+}
+function razl(form) {
+	n=eval(form.n.value);
+	m=eval(form.m.value);
+	form.x1.value =n+"-"+m+"="+(n-m);
+}
+function proi(form) {
+	n=eval(form.n.value);
+	m=eval(form.m.value);
+	form.x1.value =n+"*"+m+"="+(n*m);
+}
+function dele(form) {
+	n=eval(form.n.value);
+	m=eval(form.m.value);
+	form.x1.value =n+"/"+m+"="+(n/m);
+}
+function sqrt_(form) {
+	n=eval(form.n.value);
+	form.x1.value ="sqrt("+n+")="+Math.sqrt(n);
+}
+function proc(form) {
+	n=eval(form.n.value);
+	m=eval(form.m.value);
+	form.x1.value =n+" % от "+m+" = "+(n*m)/100;
+}
+function sin_(form) {
+	n=eval(form.n.value);
+	form.x1.value ="sin("+n+")="+Math.round(Math.sin(n*Math.PI/180)*10000)/10000;
+}
+// End --></SCRIPT>
+</HEAD>
+<BODY bgColor="#3399ff" text="#ffffff" background="bg.jpg" link="ffffff" alink="ffffff" vlink="ffffff">
+<table border="0" width="100%" height="100%" cellspacing="0" cellpadding="0"> 
+<tr><td valign=middle align=center width="100%" height="100%"> 
+<P><font size=6><b>Калкулатор</b></font><br>
+<font size=1>(<b>СТАНДАРТЕН</b>)</font><br>
+<font size=3><A href="calc_by_Ivo_2.html">към Научен</A></font>
+<FORM action="" method=post name=form>
+	<font size=5>a = <INPUT name=n size=7 value=30><br>
+ 	b = <INPUT name=m size=7 value=5><br> </font>     
+ 	<INPUT name=Button_1 onclick=sbor(this.form) type=button value="a+b">
+ 	<INPUT name=Button_2 onclick=razl(this.form) type=button value="a-b">
+ 	<INPUT name=Button_3 onclick=proi(this.form) type=button value="a*b">
+ 	<INPUT name=Button_4 onclick=dele(this.form) type=button value="a/b">
+ 	<!--<INPUT name=Button_5 onclick=sqrt_(this.form) type=button value="sqrt">-->
+ 	<INPUT name=Button_6 onclick=proc(this.form) type=button value="a% от b">
+ 	<!--<INPUT name=Button_6 onclick=sin_(this.form) type=button value="sin">--><br>
+	<input name=x1 size=23><br>
+	<font size=2>Създадено от Иво Дилов<br>
+	1 юли 2010 г.</font>
+</td></tr></table>           
+</BODY>
+</HTML>  
